@@ -49,7 +49,11 @@ export class MemStorage implements IStorage {
 
   async createContactMessage(contactMessageData: InsertContactMessage & { createdAt: string }): Promise<ContactMessage> {
     const id = this.contactMessageCurrentId++;
-    const contactMessage: ContactMessage = { ...contactMessageData, id };
+    const contactMessage: ContactMessage = { 
+      ...contactMessageData, 
+      id,
+      newsletter: contactMessageData.newsletter ?? false
+    };
     this.contactMessages.set(id, contactMessage);
     return contactMessage;
   }
