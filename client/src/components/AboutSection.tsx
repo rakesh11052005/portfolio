@@ -40,16 +40,23 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-5xl md:text-6xl font-extrabold mb-8">ABOUT</h2>
+            <h2 className="text-5xl md:text-6xl font-extrabold mb-8">ABOUT ME</h2>
             <div className="space-y-6 text-gray-300">
               <p className="text-xl leading-relaxed">
-                At Media Dome, We Specialize In Building Brands That Captivate And Connect Audiences In The Digital Landscape.
+                Hello, I'm Rakesh, a passionate designer and developer with a creative flair and a knack for building functional, user-centric applications. I thrive at the crossroads of <span className="text-primary font-medium">design and technology</span>, combining my skills in <span className="text-primary font-medium">HTML</span>, <span className="text-primary font-medium">Python</span>, and <span className="text-primary font-medium">UI/UX design</span> to craft meaningful digital experiences.
               </p>
               <p className="text-lg leading-relaxed">
-                With Design Studios And Masterclass Creative Talent, We Craft Immersive Media And Digital Experiences That Amplify Your Brand's Identity And Reach.
+                With a strong foundation in <span className="text-primary font-medium">HTML</span>, I bring life to web pages, creating visually appealing and responsive designs that engage users across devices. My knowledge of <span className="text-primary font-medium">Python</span> equips me to develop robust back-end functionalities and implement APIs that seamlessly connect the dots between systems. While I don't claim to be an extreme expert, I'm always eager to learn and refine my skills to tackle new challenges.
               </p>
+              <h3 className="text-2xl font-bold mt-8 mb-4">What I Do:</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li><span className="font-medium">UI/UX Design:</span> Transforming ideas into intuitive and impactful interfaces that enhance user interaction.</li>
+                <li><span className="font-medium">Web Development:</span> Building responsive and accessible web applications with a focus on usability and performance.</li>
+                <li><span className="font-medium">API Development:</span> Designing and implementing APIs to enable efficient communication between software systems.</li>
+              </ul>
+              <h3 className="text-2xl font-bold mt-8 mb-4">My Philosophy:</h3>
               <p className="text-lg leading-relaxed">
-                In Today's Fast-Paced Social Media Landscape, Brands Need To Stand Out Through Their Art Direction, Establish A Brand's Message, Gain Virtual Clout, And Offer A Brand's Message Can Unlock Lasting Emotional, Forge Creative Visually Stunning Connections With Target Audiences Across Creativity Across Platforms.
+                I believe that great design is not just about aesthetics but also about solving real-world problems. By combining my technical skills and creative approach, I strive to create digital solutions that resonate with users and exceed expectations.
               </p>
             </div>
             
@@ -90,7 +97,7 @@ const AboutSection = () => {
             </div>
             
             <div className="bg-[#1A1A1A] p-8">
-              <h3 className="text-2xl font-bold mb-4">TOOLS WE USE</h3>
+              <h3 className="text-2xl font-bold mb-4">TOOLS I USE</h3>
               <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
                 {tools.map((tool, index) => (
                   <ToolItem key={index} name={tool.name} icon={tool.icon} />
