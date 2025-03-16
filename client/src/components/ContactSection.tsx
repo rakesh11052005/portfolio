@@ -145,7 +145,7 @@ const ContactSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </a>
-                <a href="#" className="bg-[#2A2A2A] p-3 hover:bg-primary hover:text-[#121212] transition-colors" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/penugonda-venkata-siva-sai-rakesh-a39856352/" target="_blank" rel="noopener noreferrer" className="bg-[#2A2A2A] p-3 hover:bg-primary hover:text-[#121212] transition-colors" aria-label="LinkedIn">
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a href="https://wa.me/918688446213" target="_blank" rel="noopener noreferrer" className="bg-[#2A2A2A] p-3 hover:bg-primary hover:text-[#121212] transition-colors" aria-label="WhatsApp">

@@ -49,10 +49,15 @@ export class MemStorage implements IStorage {
 
   async createContactMessage(contactMessageData: InsertContactMessage & { createdAt: string }): Promise<ContactMessage> {
     const id = this.contactMessageCurrentId++;
-    const contactMessage: ContactMessage = { 
-      ...contactMessageData, 
+    // Explicitly construct a properly typed object with all required fields
+    const contactMessage: ContactMessage = {
       id,
-      newsletter: contactMessageData.newsletter ?? false
+      name: contactMessageData.name,
+      email: contactMessageData.email,
+      subject: contactMessageData.subject,
+      message: contactMessageData.message,
+      newsletter: contactMessageData.newsletter === undefined ? false : contactMessageData.newsletter,
+      createdAt: contactMessageData.createdAt
     };
     this.contactMessages.set(id, contactMessage);
     return contactMessage;
